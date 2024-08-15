@@ -1,0 +1,33 @@
+# Ignore node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore environment variables
+.env
+
+# Ignore log files
+logs
+*.log
+pids
+*.pid
+
+# Ignore build output
+dist/
+build/
+coverage/
+
+# Ignore local environment files
+.DS_Store
+*.local
+
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS-specific files
+*.swp
+*.swo
+Thumbs.db

@@ -1,0 +1,23 @@
+# Ignore node modules
+node_modules
+npm-debug.log
+
+# Ignore local development files
+.env
+.DS_Store
+*.log
+*.pid
+
+# Ignore test files and coverage reports
+coverage
+tests
+
+# Ignore Docker and Git-related files
+Dockerfile
+.dockerignore
+.git
+.gitignore
+
+# Ignore OS-specific files
+*.swp
+*.swo
