@@ -1,7 +1,7 @@
-#!bin/bash
+#!/bin/bash
 
 echo "Build.sh is started"
-docker build -t app1:v1 .
+docker build -f Dockerfile.yaml -t app1:v1 .
 echo "build image successfully"
 docker tag app1:v1 harsanskumaran/dev:v1
 docker push harsanskumaran/dev:v1
