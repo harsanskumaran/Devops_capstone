@@ -1,0 +1,37 @@
+# Node modules directory
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Git repository files
+.git/
+.gitignore
+
+# Docker ignore file
+.dockerignore
+
+# Environment variables
+.env
+
+# Build directories
+dist/
+build/
+
+# Test coverage output
+coverage/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# NPM/Yarn cache
+.npm/
+.yarn/
+.pnpm-debug.log*
+
