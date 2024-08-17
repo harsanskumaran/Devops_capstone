@@ -22,7 +22,8 @@ else
 fi
 
 # Push the Docker image to the repository
-docker login
+docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+echo "logged in"
 docker push harsanskumaran/dev:v1
 if [ $? -eq 0 ]; then
     echo "Docker images pushed to dev repo successfully"
