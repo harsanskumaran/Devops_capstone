@@ -10,7 +10,7 @@ else
 fi
 echo "===========================>"
 echo "tagging started"
-docker tag harsanskumaran/dev:v1 harsanskumaran/pro:v1
+docker tag harsanskumaran/dev:v1 harsanskumaran/prod:v1
 if [ $? -eq 0 ]; then
      echo "tagged"
 else 
@@ -18,7 +18,7 @@ else
 fi
 echo "===========================>"
 docker login
-docker push harsanskumaran/pro:v1
+docker push harsanskumaran/prod:v1
 if [ $? -eq 0 ]; then
      echo "image pushed to prod private rep"
 else 
