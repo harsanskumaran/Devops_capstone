@@ -3,7 +3,7 @@
 echo "Build.sh is started"
 
 # Docker login
-docker login || { echo "Docker login failed"}
+#docker login || { echo "Docker login failed"}
 
 # Build the Docker image
 docker build -f Dockerfile.yaml -t app1:v1 .
