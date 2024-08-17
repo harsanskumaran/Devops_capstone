@@ -31,3 +31,4 @@ if [ $? -eq 0 ]; then
 else
     echo "Docker push failed"
 fi
+echo "===========================>"
