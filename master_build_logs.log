@@ -1,0 +1,72 @@
+Started by GitHub push by harsanskumaran
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/master
+The recommended git tool is: NONE
+using credential 9e9f5266-b003-44a8-b596-9d18b30fd4a2
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/master/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/harsanskumaran/Devops_capstone # timeout=10
+Fetching upstream changes from https://github.com/harsanskumaran/Devops_capstone
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+using GIT_ASKPASS to set credentials Git
+ > git fetch --tags --force --progress -- https://github.com/harsanskumaran/Devops_capstone +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 27321271779c33b767864caabbd49912724fa022 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 27321271779c33b767864caabbd49912724fa022 # timeout=10
+Commit message: "Merge pull request #14 from harsanskumaran/dev"
+ > git rev-list --no-walk cfc7b6e63eb9fb2c0a77d14f1764fc230ba26d72 # timeout=10
+No emails were triggered.
+[master] $ /bin/sh -xe /tmp/jenkins16899594558331842510.sh
++ echo started deploying docker image
+started deploying docker image
++ echo ===========================>
+===========================>
++ cd build
++ echo ===========================>
+===========================>
++ chmod +x deploy.sh
++ echo ===========================>
+===========================>
++ ./deploy.sh
+Deploy.sh has started
+===========================>
+ Network build_default  Creating
+ Network build_default  Created
+ Container build-web-1  Creating
+ Container build-web-1  Created
+ Container build-web-1  Starting
+ Container build-web-1  Started
+Deploy has completed
+===========================>
+tagging started
+tagged
+===========login================>
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /var/lib/jenkins/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+===========================>
+The push refers to repository [docker.io/harsanskumaran/prod]
+d4b4e048d808: Preparing
+89d77706a274: Preparing
+ad4171098d48: Preparing
+f36fd4bb7334: Preparing
+f36fd4bb7334: Layer already exists
+89d77706a274: Mounted from harsanskumaran/dev
+d4b4e048d808: Mounted from harsanskumaran/dev
+ad4171098d48: Mounted from harsanskumaran/dev
+v1: digest: sha256:d3d5f228257e139e2d7d17174683d3ebf853f610f38f5624d2b2e15e9047ebe1 size: 1159
+image pushed to prod private rep
++ [ 0 -eq 0 ]
++ echo deploy successfully
+deploy successfully
++ echo ===========================>
+===========================>
+Email was triggered for: Always
+Sending email for trigger: Always
+Not sending mail to unregistered user (id: harsanskumaran, email: harsanskumaran@gmail.com) because your SCM claimed this was associated with a user ID 'harsanskumaran' which your security realm does not recognize; you may need changes in your SCM plugin
+Sending email to: harsanskumaran@gmail.com
