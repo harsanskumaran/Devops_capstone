@@ -2,9 +2,6 @@
 
 echo "Build.sh is started"
 
-# Docker login
-#docker login || { echo "Docker login failed"}
-
 # Build the Docker image
 docker build -f Dockerfile.yaml -t app1:v1 .
 if [ $? -eq 0 ]; then
