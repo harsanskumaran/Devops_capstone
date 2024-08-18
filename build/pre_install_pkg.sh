@@ -8,6 +8,8 @@ sudo apt install -y python3 python3-pip
 sudo apt-get install openjdk-17-jdk -y
 sudo apt install -y docker.io  docker-compose
 sudo usermod -aG docker ubuntu
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
