@@ -17,8 +17,7 @@ else
      echo "tagged failed"
 fi
 echo "===========================>"
-docker login -u $docker_login -p $docker_login
-echo "===========================>"
+docker login
 docker push harsanskumaran/prod:v1
 if [ $? -eq 0 ]; then
      echo "image pushed to prod private rep"
