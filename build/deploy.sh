@@ -17,6 +17,7 @@ else
      echo "tagged failed"
 fi
 echo "===========================>"
+
 docker login -u $docker_usr -p $docker_pwd
 echo "===========================>"
 docker push harsanskumaran/prod:v1
