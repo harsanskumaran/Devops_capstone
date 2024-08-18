@@ -19,4 +19,3 @@ sudo usermod -aG docker jenkins
 sudo sed -i 's/8080/8081/' /usr/lib/systemd/system/jenkins.service
 sudo systemctl daemon-reload
 sudo systemctl restart jenkins
-git clone https://github.com/harsanskumaran/Git_task.git
