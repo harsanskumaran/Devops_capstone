@@ -16,7 +16,7 @@ if [ $? -eq 0 ]; then
 else 
      echo "tagged failed"
 fi
-echo "===========================>"
+echo "===========login================>"
 
 docker login -u $docker_usr -p $docker_pwd
 echo "===========================>"
