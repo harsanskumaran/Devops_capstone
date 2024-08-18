@@ -16,5 +16,6 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
 sudo apt-get update
 sudo apt-get install jenkins
 sudo usermod -aG docker jenkins
+sudo sed -i 's/Environment="JENKINS_PORT=8080"/Environment="JENKINS_PORT=8081"/'  /usr/lib/systemd/system/jenkins*
 sudo systemctl restart jenkins
 git clone https://github.com/harsanskumaran/Git_task.git
