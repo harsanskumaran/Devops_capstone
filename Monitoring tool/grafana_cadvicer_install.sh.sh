@@ -15,4 +15,4 @@ sudo apt-get install grafana-enterprise
 sudo docker run -d --name=cadvisor -p 8080:8080 -v /:/rootfs:ro -v /var/run:/var/run:ro -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -v /dev/disk/:/dev/disk:ro --privileged --device=/dev/kmsg --restart=unless-stopped gcr.io/cadvisor/cadvisor
 
 
-echo "completed successfully"
+echo "pushing to dev repo to build image"
