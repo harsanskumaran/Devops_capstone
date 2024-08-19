@@ -18,7 +18,7 @@ else
     echo "Image tagging failed"
 fi
 
-# Push the Docker image to the repository
+# Push the Docker image to the repository now
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 echo "logged in"
 echo "===========================>"
